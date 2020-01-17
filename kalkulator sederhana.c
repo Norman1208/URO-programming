@@ -1,27 +1,29 @@
 #include <stdio.h>
- 
+
 int main()
 {
 	char Operator;
-	float num1, num2, result = 0;
-	
-	printf("\n Please Enter an Operator (+)  :  ");
+	float angka1, angka2, hasil = 0;
+
+	printf("\n tolong masukan Operator (+,-)  :  ");
   	scanf("%c", &Operator);
-  	
-	printf("\n Please Enter the Values for two Operands: num1 and num2  :  ");
-  	scanf("%f%f", &num1, &num2);
-  	
+
+	printf("\n masukan 2 angka: angka1 and angka2  :  ");
+  	scanf("%f%f", &angka1, &angka2);
+
   	switch(Operator)
   	{
   		case '+':
-  			result = num1 + num2;
+  			hasil = angka1 + angka2;
   			break;
-  
+        case '-':
+            hasil = angka1 - angka2;
+            break;
 		default:
-			printf("\n You have enetered an Invalid Operator ");				    			
+			printf("\n operator yang kamu masukan tidak sesuai ");
 	}
-  
-	printf("\n The result of %.2f %c %.2f  = %.2f", num1, Operator, num2, result);
-	
+
+	printf("\n The result of %.2f %c %.2f  = %.2f", angka1, Operator, angka2, hasil);
+
   	return 0;
 }
