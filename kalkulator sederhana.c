@@ -5,7 +5,7 @@ int main()
 	char Operator;
 	float angka1, angka2, hasil = 0;
 
-	printf("\n tolong masukan Operator (+,-)  :  ");
+	printf("\n tolong masukan Operator (+,-,*,/)  :  ");
   	scanf("%c", &Operator);
 
 	printf("\n masukan 2 angka: angka1 and angka2  :  ");
@@ -16,9 +16,15 @@ int main()
   		case '+':
   			hasil = angka1 + angka2;
   			break;
-        case '-':
-            hasil = angka1 - angka2;
-            break;
+        	case '-':
+            		hasil = angka1 - angka2;
+            		break;
+		case '*':
+			hasil = angka1 * angka2;
+			break;
+		case '/':
+			hasil = angka1 / angka2;
+			break;
 		default:
 			printf("\n operator yang kamu masukan tidak sesuai ");
 	}
